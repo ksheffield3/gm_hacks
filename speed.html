@@ -62,23 +62,110 @@
       
         <div class=".col-xs-6">
           <h2>Average Speed</h2>
-          <p>Per week / per month / per year</p>
-        </div>
+           <select id="speed_avg" onchange="get_speed_avg()">
+          	<option value="default">Choose a Time Period</option>
+  			<option value="week">Week</option>
+  			<option value="month">Month</option>
+  			<option value="year">Year</option>
+		  </select>
+		  
+         	<p id="avg_speed" style="padding-top:5px"></p>
+         	
+         	
+       </div>
+        
         <div class=".col-xs-6">
           <h2>Max Speed</h2>
-          <p>Per week / per month / per year</p>
+            <select id="max_speed" onchange="get_max_speed()">
+          	<option value="default">Choose a Time Period</option>
+  			<option value="week">Week</option>
+  			<option value="month">Month</option>
+  			<option value="year">Year</option>
+		  </select>
+		  
+         	<p id="speed_max" style="padding-top:5px"></p>
        </div>
         <div class=".col-xs-6">
           <h2>Number of Times Speeding (by law)</h2>
-          <p>Table showing day, time, and location of each alert</p>
+          <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-031e">05-01-2015</th>
+    <th class="tg-031e">11:48 AM</th>
+    <th class="tg-031e">Atlanta, GA</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">06-08-2015</td>
+    <td class="tg-031e">04:25 PM</td>
+    <td class="tg-031e">Doraville, GA</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">07-12-2015</td>
+    <td class="tg-031e">09:03 PM</td>
+    <td class="tg-031e">Decatur, GA</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">08-17-2015</td>
+    <td class="tg-031e">12:02 AM</td>
+    <td class="tg-031e">College Park, GA</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">08-24-2015</td>
+    <td class="tg-031e">12:15 AM</td>
+    <td class="tg-031e">Sandy Springs, GA</td>
+  </tr>
+</table>
         </div>
         <div class=".col-xs-6">
           <h2>Number of Times Speeding (by parent setting)</h2>
-          <p>Per week / per month / per year</p>
+          <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-031e">07-01-2015</th>
+    <th class="tg-031e">11:45 AM</th>
+    <th class="tg-031e">Atlanta, GA</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">08-08-2015</td>
+    <td class="tg-031e">02:25 PM</td>
+    <td class="tg-031e">Doraville, GA</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">08-12-2015</td>
+    <td class="tg-031e">08:03 PM</td>
+    <td class="tg-031e">Decatur, GA</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">08-17-2015</td>
+    <td class="tg-031e">12:02 AM</td>
+    <td class="tg-031e">College Park, GA</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">08-24-2015</td>
+    <td class="tg-031e">12:15 AM</td>
+    <td class="tg-031e">Sandy Springs, GA</td>
+  </tr>
+</table>
         </div>
         <div class=".col-xs-6">
           <h2>Stability Reports</h2>
-          <p>Per week / per month / per year</p>
+          <p>Number of Times Stability Alerts Were Triggered</p>
+          <select id="stab_report" onchange="get_stab_report()">
+          	<option value="default">Choose a Time Period</option>
+  			<option value="week">Week</option>
+  			<option value="month">Month</option>
+  			<option value="year">Year</option>
+		  </select>
+		  
+         	<p id="report_stab" style="padding-top:5px"></p>
         </div>
         <div class=".col-xs-6">
           <h2>Settings </h2>
@@ -89,7 +176,7 @@
     
     
     
-    
+      <script src="data_generator.js"></script> 
     
     
     
