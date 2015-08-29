@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        
+
         <script type="text/javascript" src="jscharts.js"></script>
     </head>
     <body>
@@ -46,29 +46,29 @@
           </form>
         </div><!--/.navbar-collapse -->
       </div>
-    </nav>  
-    
+    </nav>
+
      <div class="jumbotron">
       <div class="container">
         <h1>Weekly Summary</h1>
       </div>
-      
-      
-      
-      
 
-    </div> 
-    
-    
-  
-    
- 
+
+
+
+
+    </div>
+
+
+
+
+
     <div id="chart_container"></div>
-    
+
 <script type="text/javascript">
 
 var myChart = new JSChart('chart_container', 'bar', '');
-myChart.setDataArray([['Monday ', 8],['Tuesday ', 10],['Wednesday ', 9],['Thursday ', 11],['Friday ', 18],['Saturday ', 22],['Sunday ', 25]]);
+myChart.setDataArray([['Mon', 8],['Tues', 10],['Wed', 9],['Thurs', 11],['Fri', 18],['Sat', 22],['Sun', 25]]);
 myChart.colorize(['#3E90C9','#3E90C9','#3E90C9','#3E90C9','#3E90C9','#3E90C9','#3E90C9']);
 myChart.setAxisNameX('Day of Week', false);
 myChart.setAxisNameY('Miles Driven', false);
@@ -85,4 +85,3 @@ myChart.draw();
 <div><h3>Speed Violations</h3></div>
 </div>
 </div>
-       
