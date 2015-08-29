@@ -38,13 +38,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
+               <form class="navbar-form navbar-right" role="form">
+            <font color="white">Welcome, Jane!</font>
+          </form>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
@@ -86,16 +82,27 @@
        </div>
         <div class=".col-xs-6">
           <h2>Trips Between Midnight and 6:00 AM</h2>
-          <p>Table showing day, time, and location of each alert</p>
+           <select id="midnight_trips" onchange="get_midnight_trips()">
+          	<option value="default">Choose a Time Period</option>
+  			<option value="week">Week</option>
+  			<option value="month">Month</option>
+  			<option value="year">Year</option>
+		  </select>
+		  
+         	<p id="trips_midnight" style="padding-top:5px"></p>
         </div>
         <div class=".col-xs-6">
           <h2>Average Fuel Economy</h2>
-          <p>Per week / per month / per year</p>
+           <select id="fuel_econ" onchange="get_fuel_econ()">
+          	<option value="default">Choose a Time Period</option>
+  			<option value="week">Week</option>
+  			<option value="month">Month</option>
+  			<option value="year">Year</option>
+		  </select>
+		  
+         	<p id="econ_fuel" style="padding-top:5px"></p>
         </div>
-        <div class=".col-xs-6">
-          <h2>Hard Accelerations</h2>
-          <p>Per week / per month / per year</p>
-        </div>
+       
         <div class=".col-xs-6">
           <h2>Last Known Location</h2>
           <iframe
@@ -108,16 +115,13 @@
             &maptype=roadmap" allowfullscreen>
           </iframe>
         </div>
-        <div class=".col-xs-6">
-          <h2>Most Miles in a Single Trip</h2>
-          <p>Per week / per month / per year</p>
-        </div>
+       
         <div class=".col-xs-6">
           <h2>Settings </h2>
           <p>All settings for alerts can be adjusted on the <a href="settings.html">settings page</a></p>
         </div>
     </div>
-<<<<<<< HEAD
+
     
     
     
@@ -141,6 +145,4 @@
     
     
     
-    
-=======
->>>>>>> FETCH_HEAD
+

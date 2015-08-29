@@ -117,6 +117,38 @@ function get_trips()
 	}	
 }
 
+function get_midnight_trips()
+{
+	if(document.getElementById("midnight_trips").value=="week")
+	{
+		document.getElementById("trips_midnight").innerHTML = "0 trips";
+	}
+	if(document.getElementById("midnight_trips").value=="month")
+	{
+		document.getElementById("trips_midnight").innerHTML = "0 trips";
+	}
+	if(document.getElementById("midnight_trips").value=="year")
+	{
+		document.getElementById("trips_midnight").innerHTML = "2 trips";
+	}	
+}
+
+function get_fuel_econ()
+{
+	if(document.getElementById("fuel_econ").value=="week")
+	{
+		document.getElementById("econ_fuel").innerHTML = "25 miles/gallon";
+	}
+	if(document.getElementById("fuel_econ").value=="month")
+	{
+		document.getElementById("econ_fuel").innerHTML = "28 miles/gallon";
+	}
+	if(document.getElementById("fuel_econ").value=="year")
+	{
+		document.getElementById("econ_fuel").innerHTML = "26 miles/gallon";
+	}	
+}
+
 
 
 
