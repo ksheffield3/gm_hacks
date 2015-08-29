@@ -81,3 +81,45 @@ function get_stab_report()
 		document.getElementById("report_stab").innerHTML = "3 times";
 	}	
 }
+
+
+
+
+function get_distance_driven()
+{
+	if(document.getElementById("distance_driven").value=="week")
+	{
+		document.getElementById("drive_distance").innerHTML = "152 miles";
+	}
+	if(document.getElementById("distance_driven").value=="month")
+	{
+		document.getElementById("drive_distance").innerHTML = "607 miles";
+	}
+	if(document.getElementById("distance_driven").value=="year")
+	{
+		document.getElementById("drive_distance").innerHTML = "7,834 miles";
+	}	
+}
+
+function get_trips()
+{
+	if(document.getElementById("num_trips").value=="week")
+	{
+		document.getElementById("total_trips").innerHTML = "5 trips";
+	}
+	if(document.getElementById("num_trips").value=="month")
+	{
+		document.getElementById("total_trips").innerHTML = "23 trips";
+	}
+	if(document.getElementById("num_trips").value=="year")
+	{
+		document.getElementById("total_trips").innerHTML = "239 trips";
+	}	
+}
+
+
+
+
+
+
+
